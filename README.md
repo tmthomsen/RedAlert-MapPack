@@ -52,10 +52,6 @@ For CnCNet, place the `.mpr` files inside the `...\CnCNet\RedAlert1_Online\Maps`
 ### [Shrek v1.0](https://github.com/tmthomsen/RedAlert_TheStrandvaskerCollection/raw/main/maps/Shrek_v1.0.mpr)<br>
 ![Shrek v1.0](/readme-previews/Shrek_v1.0.png)<br>
 <br>
-## StramKurs
-### [StramKurs v1.1](https://github.com/tmthomsen/RedAlert_TheStrandvaskerCollection/raw/main/maps/StramKurs_v1.1.mpr)<br>
-![StramKurs v1.1](/readme-previews/StramKurs_v1.1.png)<br>
-<br>
 ## Wuhansyssel
 ### [Wuhansyssel v1.0](https://github.com/tmthomsen/RedAlert_TheStrandvaskerCollection/raw/main/maps/Wuhansyssel_v1.0.mpr)<br>
 ![Wuhansyssel v1.0](/readme-previews/Wuhansyssel_v1.0.png)<br>
