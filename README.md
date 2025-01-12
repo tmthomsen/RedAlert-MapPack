@@ -1,22 +1,48 @@
-# File List
+# C&C Red Alert: The Strandvasker Collection (Map Pack)
+A collection of the absolute best maps created for C&C Red Alert post anno 2020 in Jutland, Denmark.
 
-- AntiLifeEquation_v1.0.mpr
-- AntiLifeEquation_v2.0.mpr
-- BattleOfAalborg_v1.0.mpr
-- BattleOfAalborg_v1.1.mpr
-- BattleOfAalborg_v1.3_dentredjelimfjordsforbindelse.mpr
-- BUTTHORN_v1.0.mpr
-- BUTTHORN_v2.0.mpr
-- Comator_v1.0.mpr
-- Comator_v1.1_Fix.mpr
-- IcePirates_v1.0.mpr
-- JuliWuhansyssel_v1.0.mpr
-- JuliWuhansyssel_v1.1.mpr
-- JuliWuhansyssel_v1.2_Nordtyndoglangogfuldafguld.mpr
-- Laesoe_v1.0.mpr
-- Shrek_v0.1.mpr
-- Shrek_v1.0.mpr
-- StramKurs_v1.1.mpr
-- Wuhansyssel_v1.0.mpr
-- Wuhansyssel_v1.1_laesoeedition.mpr
-- Wuhansyssel_v1.2_Nordtyndoglang.mpr
+## Installation
+For CnCNet: Place inside __...\CnCNet\RedAlert1_Online\Maps__ folder.
+
+## Maps
+
+### AntiLifeEquation
+AntiLifeEquation v1.0<br>
+AntiLifeEquation v2.0<br>
+
+### BUTTHORN
+BUTTHORN v1.0<br>
+BUTTHORN v2.0<br>
+
+### BattleOfAalborg
+BattleOfAalborg v1.0<br>
+BattleOfAalborg v1.1<br>
+BattleOfAalborg v1.3 dentredjelimfjordsforbindelse<br>
+
+### Comator
+Comator v1.0<br>
+Comator v1.1 Fix<br>
+
+### IcePirates
+IcePirates v1.0<br>
+
+### Jul i Wuhansyssel
+JuliWuhansyssel v1.0<br>
+JuliWuhansyssel v1.1<br>
+JuliWuhansyssel v1.2 Norgetyndoglangogfuldafguld<br>
+
+### Laesoe
+Laesoe v1.0<br>
+
+### Shrek
+Shrek v0.1<br>
+Shrek v1.0<br>
+
+### StramKurs
+StramKurs v1.1<br>
+
+### Wuhansyssel
+Wuhansyssel v1.0<br>
+Wuhansyssel v1.1 laesoeedition<br>
+Wuhansyssel v1.2 Norgetyndoglang<br>
+
