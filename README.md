@@ -8,5 +8,5 @@ For CnCNet, place the `.mpr` files inside the `...\CnCNet\RedAlert1_Online\Maps`
 [Contribution guidelines for this project](maps/AntiLifeEquation_v1.0.mpr)
 [Download the file](https://raw.githubusercontent.com/tmthomsen/RedAlert_TheStrandvaskerCollection/main/maps/AntiLifeEquation_v1.0.mpr)
 
-[Download the file](https://github.com/tmthomsen/RedAlert_TheStrandvaskerCollection/raw/main/example.txt)
+[Download the file](https://github.com/tmthomsen/RedAlert_TheStrandvaskerCollection/raw/main/maps/AntiLifeEquation_v1.0.mpr)
 
