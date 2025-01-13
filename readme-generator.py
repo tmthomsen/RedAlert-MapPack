@@ -12,6 +12,8 @@ def GenerateReadme(folderName, outputFile):
     try:
         mapFiles = os.listdir(folderName)
         mapFiles = [f for f in mapFiles if os.path.isfile(os.path.join(folderName, f))]
+        
+        subprocess.run(["git","pull"])
 
         with open(outputFile, "w") as readmeFile:
             readmeFile.write("# C&C Red Alert: The Strandvasker Collection (Map Pack)\n")
@@ -36,7 +38,6 @@ def GenerateReadme(folderName, outputFile):
 
                 readmeFile.write("<br>\n")
 
-        subprocess.run(["git","pull"])
         subprocess.run(["git","add", NAME_README_FILE_OUTPUT])
         subprocess.run(["git","commit", "-m", "Readme auto-updated."])
         subprocess.run(["git", "push"])
