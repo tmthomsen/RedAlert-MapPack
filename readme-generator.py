@@ -37,8 +37,8 @@ def GenerateReadme(folderName, outputFile):
                 readmeFile.write("<br>\n")
 
 
-        subprocess.run(["git","add", "README.md"])
-        subprocess.run(["git","commit", "-m", "Readme has been auto-updated."])
+        subprocess.run(["git","add", NAME_README_FILE_OUTPUT])
+        subprocess.run(["git","commit", "-m", "Readme auto-updated."])
         subprocess.run(["git", "push"])
 
         print(f"Succesfully written to '{outputFile}'.\n")
