@@ -1,4 +1,5 @@
 import os
+import subprocess
 from collections import defaultdict
 
 NAME_MAPS_FOLDER = "maps"
@@ -13,7 +14,7 @@ def GenerateReadme(folderName, outputFile):
         mapFiles = [f for f in mapFiles if os.path.isfile(os.path.join(folderName, f))]
 
         with open(outputFile, "w") as readmeFile:
-            readmeFile.write("# C&C Red Alert: The Strandvasker Collection (Map Pack)\n")
+            readmeFile.write("# Cs&C Red Alert: The Strandvasker Collection (Map Pack)\n")
             readmeFile.write("A collection of the absolute best maps created for C&C Red Alert post anno 2020 in Jutland, Denmark.<br>\n\n")
 
             readmeFile.write("### Installation\n")
@@ -35,6 +36,10 @@ def GenerateReadme(folderName, outputFile):
 
                 readmeFile.write("<br>\n")
 
+
+        subprocess.run(["git","add", "README.md"])
+        subprocess.run(["git","commit", "-m", "Readme has been auto-updated."])
+        subprocess.run(["git", "push"])
 
         print(f"Succesfully written to '{outputFile}'.\n")
 
