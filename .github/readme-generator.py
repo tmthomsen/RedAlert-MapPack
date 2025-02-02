@@ -4,7 +4,7 @@ from collections import defaultdict
 
 NAME_README_FILE_OUTPUT = "README.md"
 MAP_NAME_SPLITTER = "_v"
-MAP_PREVIEW_IMAGES_FOLDER_URL = "/readme-previews/"
+MAP_PREVIEW_IMAGES_FOLDER_URL = "/images/"
 MAP_FOLDER_URL = "https://github.com/tmthomsen/RedAlert_TheStrandvaskerCollection/raw/main/maps/"
 
 def GenerateReadme(outputFile):
@@ -21,7 +21,7 @@ def GenerateReadme(outputFile):
             readmeFile.write("A collection of the absolute best maps created for C&C Red Alert post anno 2020 in Jutland, Denmark.<br>\n\n")
 
             readmeFile.write("### Installation\n")
-            readmeFile.write("For CnCNet, place the `.mpr` files inside the `...\CnCNet\RedAlert1_Online\Maps` folder.<br><br>\n\n")
+            readmeFile.write("For CnCNet, clone this repo to the `...\CnCNet\RedAlert1_Online\Maps` folder.<br><br>\n\n")
 
             mapGroups = defaultdict(list)
             for file in mapFiles:
