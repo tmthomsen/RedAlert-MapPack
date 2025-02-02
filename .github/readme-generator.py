@@ -1,21 +1,22 @@
-import os
 import subprocess
+from pathlib import Path
 from collections import defaultdict
 
-NAME_MAPS_FOLDER = "maps"
 NAME_README_FILE_OUTPUT = "README.md"
 MAP_NAME_SPLITTER = "_v"
 MAP_PREVIEW_IMAGES_FOLDER_URL = "/readme-previews/"
 MAP_FOLDER_URL = "https://github.com/tmthomsen/RedAlert_TheStrandvaskerCollection/raw/main/maps/"
 
-def GenerateReadme(folderName, outputFile):
+def GenerateReadme(outputFile):
     try:
-        mapFiles = os.listdir(folderName)
-        mapFiles = [f for f in mapFiles if os.path.isfile(os.path.join(folderName, f))]
-        
-        subprocess.run(["git","pull"])
+        parentDir = Path.cwd().parent
 
-        with open(outputFile, "w") as readmeFile:
+        mapFilesPaths = list(parentDir.glob("*.mpr"))
+        mapFiles = [str(f) for f in mapFilesPaths]
+
+        #subprocess.run(["git","pull"])
+
+        with open(parentDir / outputFile, "w") as readmeFile:
             readmeFile.write("# C&C Red Alert: The Strandvasker Collection (Map Pack)\n")
             readmeFile.write("A collection of the absolute best maps created for C&C Red Alert post anno 2020 in Jutland, Denmark.<br>\n\n")
 
@@ -38,9 +39,9 @@ def GenerateReadme(folderName, outputFile):
 
                 readmeFile.write("<br>\n")
 
-        subprocess.run(["git","add", NAME_README_FILE_OUTPUT])
-        subprocess.run(["git","commit", "-m", "Readme auto-updated."])
-        subprocess.run(["git", "push"])
+        #subprocess.run(["git","add", NAME_README_FILE_OUTPUT])
+        #subprocess.run(["git","commit", "-m", "Readme auto-updated."])
+        #subprocess.run(["git", "push"])
 
         print(f"Succesfully written to '{outputFile}'.\n")
 
@@ -55,4 +56,4 @@ def GetMapPreviewImageStr(mapNameClean, mapNameFull) -> str:
     return f"![{mapNameClean}]({MAP_PREVIEW_IMAGES_FOLDER_URL}{mapNameAndVersion})"
 
 if __name__ == "__main__":
-    GenerateReadme(NAME_MAPS_FOLDER, NAME_README_FILE_OUTPUT)
+    GenerateReadme(NAME_README_FILE_OUTPUT)
