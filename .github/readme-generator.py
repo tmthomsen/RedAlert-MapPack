@@ -16,7 +16,7 @@ def GenerateReadme(outputFile):
 
         #subprocess.run(["git","pull"])
 
-        with open(parentDir / outputFile, "w") as readmeFile:
+        with open(outputFile, "w") as readmeFile:
             readmeFile.write("# C&C Red Alert: The Strandvasker Collection (Map Pack)\n")
             readmeFile.write("A collection of the absolute best maps created for C&C Red Alert post anno 2020 in Jutland, Denmark.<br>\n\n")
 
